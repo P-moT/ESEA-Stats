@@ -1,0 +1,32 @@
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 945-556-872
+INFO:werkzeug:127.0.0.1 - - [16/Jul/2025 00:42:37] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jul/2025 00:42:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Jul/2025 00:44:48] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jul/2025 00:44:48] "[33mGET /flask_app/static/steel.jpg HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Jul/2025 00:45:10] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jul/2025 00:45:10] "GET /static/steel.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jul/2025 00:46:07] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jul/2025 00:46:07] "[36mGET /static/steel.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Jul/2025 00:46:46] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jul/2025 00:46:46] "[36mGET /static/steel.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Jul/2025 00:48:18] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jul/2025 00:48:18] "GET /static/stormz.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jul/2025 00:48:18] "[36mGET /static/steel.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Jul/2025 00:48:29] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jul/2025 00:48:29] "[36mGET /static/steel.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Jul/2025 00:48:29] "[36mGET /static/stormz.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Jul/2025 00:49:04] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jul/2025 00:49:04] "[36mGET /static/steel.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Jul/2025 00:49:04] "[36mGET /static/stormz.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Jul/2025 00:51:58] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jul/2025 00:51:58] "GET /static/steel2.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jul/2025 00:51:58] "GET /static/stormz3.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jul/2025 00:51:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [16/Jul/2025 00:52:37] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jul/2025 00:52:37] "[36mGET /static/steel2.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Jul/2025 00:52:37] "[36mGET /static/stormz3.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [16/Jul/2025 00:53:30] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jul/2025 00:53:30] "GET /static/steel2.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jul/2025 00:53:30] "GET /static/stormz3.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Jul/2025 00:56:21] "GET / HTTP/1.1" 200 -
