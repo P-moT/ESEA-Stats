@@ -9,38 +9,15 @@ import dotenv
 from os.path import dirname
 bcrypt = Bcrypt(app)
 
-PROD_API_URL = "https://open.faceit.com/data/v4"
-
-@app.route('/api/player', methods=['POST'])
-def get_player():
-    headers = {
-        "Authorization" : "Bearer " + os.environ.get("API_KEY")
-    }
-    player_id = request.form['playerid']
-    url = PROD_API_URL + f'/players/{player_id}'
-    response = requests.get(url=url,headers=headers)
-    with open('output.json', "w") as file:
-        json.dump(response.json(), file, indent=4)
-    data = response.json()
-    print(data['nickname'])
-    print(data['steam_id_64'])
-    return redirect('/')
-
-@app.route('/api/stats', methods=['POST'])
-def get_stats():
-    headers = {
-        "Authorization" : "Bearer " + os.environ.get("API_KEY")
-    }
-    match_id = request.form['ID']
-    url = PROD_API_URL + f'/matches/{match_id}/stats'
-    response = requests.get(url=url, headers=headers)
-    print(response.json())
-    with open('output.json', "w") as file:
-        json.dump(response.json(), file, indent=4)
-    return redirect('/')
-
-
 @app.route('/')
 def home():
     
     return render_template("home.html")
+
+@app.route('/match/<match_id>/')
+def match_page(match_id):
+    list = session['team_list']
+    team1 = list[0]
+    team2 = list[1]
+    session.clear()
+    return render_template("scoreboard.html", team1 = team1, team2 = team2)
