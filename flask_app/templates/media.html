@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Media - Core Esports</title>
+    <style>
+        body {
+            background: #181024;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .banner {
+            width: 100%;
+            background: #3a006a;
+            display: flex;
+            align-items: center;
+            padding: 16px 32px;
+            box-sizing: border-box;
+        }
+        .banner img {
+            height: 48px;
+            margin-right: 16px;
+        }
+        .banner nav {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            align-items: center;
+        }
+        .banner a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        .socials {
+            display: flex;
+            gap: 32px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        .socials a img {
+            height: 48px;
+            width: 48px;
+            border-radius: 8px;
+            background: #fff;
+            padding: 4px;
+            transition: transform 0.2s;
+        }
+        .socials a img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+    <img src="/static/images/C0reLogo.png" alt="Core Esports Logo">
+    <nav style="flex: 1; display: flex; justify-content: center; gap: 32px; align-items: center;">
+            <a href="/">Home</a>
+            <a href="/shop">Shop</a>
+            <a href="/teams">Teams</a>
+            <a href="/core">Core</a>
+            <a href="/media">Media</a>
+        </nav>
+    </div>
+    <h1>Welcome to the Media Page!</h1>
+    <p>Here you can find all our latest media, videos, and photos.</p>
+    <div class="socials">
+        <a href="https://www.twitch.tv/c0reesports" target="_blank" title="Twitch">
+            <img src="/static/socials/twitch.png" alt="Twitch Logo">
+        </a>
+        <a href="https://www.instagram.com/c0reesports/" target="_blank" title="Instagram">
+            <img src="/static/socials/instagram.png" alt="Instagram Logo">
+        </a>
+        <a href="https://x.com/C0reEsports" target="_blank" title="X (Twitter)">
+            <img src="/static/socials/x.png" alt="X Logo">
+        </a>
+    </div>
+    <!-- Add your media content here -->
+</body>
+</html>
