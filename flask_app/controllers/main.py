@@ -21,3 +21,20 @@ def match_page(match_id):
     team2 = list[1]
     session.clear()
     return render_template("scoreboard.html", team1 = team1, team2 = team2)
+
+@app.route('/media')
+def media():
+    return render_template('media.html')
+
+@app.route('/shop')
+def shop():
+    return render_template('shop.html')
+
+@app.route('/teams')
+def teams():
+    return render_template('teams.html')
+
+@app.route('/core')
+def core():
+    return render_template('core.html')
+

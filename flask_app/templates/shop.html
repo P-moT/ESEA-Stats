@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop - Core Esports</title>
+    <style>
+        body {
+            background: #181024;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+        .banner {
+            width: 100%;
+            background: #3a006a;
+            display: flex;
+            align-items: center;
+            padding: 16px 32px;
+            box-sizing: border-box;
+        }
+        .banner img {
+            height: 48px;
+            margin-right: 16px;
+        }
+        .banner nav {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            gap: 32px;
+            align-items: center;
+        }
+        .banner a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        .shop-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 32px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        .shop-item {
+            background: #24103a;
+            border-radius: 12px;
+            padding: 24px;
+            width: 220px;
+            text-align: center;
+            box-shadow: 0 2px 8px #0004;
+        }
+        .shop-item img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            margin-bottom: 16px;
+        }
+        .shop-item button {
+            background: #3a006a;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 8px;
+        }
+        .shop-item button:hover {
+            background: #5e1ca3;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+    <img src="/static/images/C0reLogo.png" alt="Core Esports Logo">
+    <nav style="flex: 1; display: flex; justify-content: center; gap: 32px; align-items: center;">
+            <a href="/">Home</a>
+            <a href="/shop">Shop</a>
+            <a href="/teams">Teams</a>
+            <a href="/core">Core</a>
+            <a href="/media">Media</a>
+        </nav>
+    </div>
+    <h1>Core Esports Shop</h1>
+    <div class="shop-items">
+        <!-- Example shop items, replace with your actual products -->
+        <div class="shop-item">
+            <img src="/static/shop/shirt.png" alt="Core Esports Shirt">
+            <h2>Core Esports Shirt</h2>
+            <p>$35.00</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="shop-item">
+            <img src="/static/shop/hoodie.png" alt="Core Esports Hoodie">
+            <h2>Core Esports Hoodie</h2>
+            <p>$65.00</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="shop-item">
+            <img src="/static/shop/mug.png" alt="Core Esports Mug">
+            <h2>Core Esports Mug</h2>
+            <p>$25.00</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+</body>
+</html>
