@@ -11,6 +11,21 @@ bcrypt = Bcrypt(app)
 
 PROD_API_URL = "https://open.faceit.com/data/v4"
 
+@app.route('/api/player', methods=['POST'])
+def get_player():
+    headers = {
+        "Authorization" : "Bearer " + os.environ.get("API_KEY")
+    }
+    player_id = request.form['playerid']
+    url = PROD_API_URL + f'/players/{player_id}'
+    response = requests.get(url=url,headers=headers)
+    with open('output.json', "w") as file:
+        json.dump(response.json(), file, indent=4)
+    data = response.json()
+    print(data['nickname'])
+    print(data['steam_id_64'])
+    return redirect('/')
+
 @app.route('/api/stats', methods=['POST'])
 def get_stats():
     headers = {
