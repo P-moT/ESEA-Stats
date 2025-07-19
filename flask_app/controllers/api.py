@@ -36,6 +36,8 @@ def get_stats():
     match_details = (requests.get(url=match_details_url, headers=headers)).json()
     match_stats_url = PROD_API_URL + f'/matches/{match_id}/stats'
     match_stats = (requests.get(url=match_stats_url, headers=headers)).json()
+    with open('output.json', "w") as file:
+        json.dump(match_details, file, indent=4)
     teams = []
     for key in match_details['teams']:
         teams.append(match_details['teams'][key]['name'])

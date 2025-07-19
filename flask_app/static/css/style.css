@@ -1,0 +1,24 @@
+
+body {
+    margin: 0;
+    background: #181024;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+.banner {
+    width: 100%;
+    background: #3a006a;
+    display: flex;
+    align-items: center;
+    padding: 16px 32px;
+    box-sizing: border-box;
+}
+.banner img {
+    height: 48px;
+    margin-right: 16px;
+}
+.banner-title {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
