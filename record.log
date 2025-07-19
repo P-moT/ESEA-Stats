@@ -1,4 +1,3 @@
 WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 945-556-872
-INFO:werkzeug:127.0.0.1 - - [19/Jul/2025 00:40:00] "[32mPOST /api/stats HTTP/1.1[0m" 302 -
-INFO:werkzeug:127.0.0.1 - - [19/Jul/2025 00:40:00] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Jul/2025 01:30:48] "GET / HTTP/1.1" 200 -
