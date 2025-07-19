@@ -14,6 +14,11 @@
         <button type="submit">Submit</button>
         <span id="error-message" style="color:red; margin-left:10px;"></span>
     </form>
+    <h1>Enter Player ID</h1>
+    <form action="/api/player" method="post">
+        <label for="playerid">Player ID:</label>
+        <input type="text" name="playerid" id="playerid">
+    </form>
     <script>
         function validateMatchID() {
             const input = document.getElementById('ID').value.trim();
