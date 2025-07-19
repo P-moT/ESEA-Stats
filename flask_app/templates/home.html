@@ -5,16 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ESEA Stats</title>
 </head>
+<!-- ...Testing Stuff -TJP... -->
 <body>
-    <h1>Enter Match ID</h1>
-    <form method="post" action="/api/stats">
-        <label for="ID">MATCH ID:</label>
+    <h1>Enter Faceit Match Page Link</h1>
+    <form method="post" action="/api/stats" onsubmit="return validateMatchID()">
+        <label for="ID">Faceit Match Page Link:</label>
         <input type="text" name="ID" id="ID">
+        <button type="submit">Submit</button>
+        <span id="error-message" style="color:red; margin-left:10px;"></span>
     </form>
     <h1>Enter Player ID</h1>
     <form action="/api/player" method="post">
         <label for="playerid">Player ID:</label>
         <input type="text" name="playerid" id="playerid">
     </form>
+    <script>
+        function validateMatchID() {
+            const input = document.getElementById('ID').value.trim();
+            const parts = input.split('/');
+            const filtered = parts.filter(Boolean);
+            const errorMsg = document.getElementById('error-message');
+            if (filtered.length !== 6) {
+                errorMsg.textContent = "Broken link: Incorrect number of segments.";
+                errorMsg.style.color = "red";
+                return false;
+            }
+            // Get the last segment (after the 5th '/')
+            const matchID = filtered[5];
+            errorMsg.textContent = "Processing data: " + matchID;
+            errorMsg.style.color = "green";
+            document.getElementById('ID').value = matchID;
+            // Keep the message visible longer (reset after 3 seconds)
+            setTimeout(() => {
+                errorMsg.textContent = "";
+            }, 3000);
+            return true;
+        }
+    </script>
 </body>
+
 </html>
