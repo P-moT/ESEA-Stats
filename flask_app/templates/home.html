@@ -4,21 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ESEA Stats</title>
+    <style>
+        body {
+            margin: 0;
+            background: #181024;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+        .banner {
+            width: 100%;
+            background: #3a006a;
+            display: flex;
+            align-items: center;
+            padding: 16px 32px;
+            box-sizing: border-box;
+        }
+        .banner img {
+            height: 48px;
+            margin-right: 16px;
+        }
+        .banner-title {
+            font-size: 2rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+    </style>
 </head>
 <!-- ...Testing Stuff -TJP... -->
 <body>
+<div class="banner">
+    <img src="/static/photos/C0reLogo.png" alt="Core Esports Logo">
+    <nav style="flex: 1; display: flex; justify-content: center; gap: 32px; align-items: center;">
+        <a href="/" style="color:#fff; text-decoration:none; font-weight:bold; font-size:1.5rem;">Home</a>
+        <a href="/shop" style="color:#fff; text-decoration:none; font-weight:bold; font-size:1.5rem;">Shop</a>
+        <a href="/teams" style="color:#fff; text-decoration:none; font-weight:bold; font-size:1.5rem;">Teams</a>
+        <a href="/core" style="color:#fff; text-decoration:none; font-weight:bold; font-size:1.5rem;">Core</a>
+        <a href="/media" style="color:#fff; text-decoration:none; font-weight:bold; font-size:1.5rem;">Media</a>
+    </nav>
+</div>
     <h1>Enter Faceit Match Page Link</h1>
     <form method="post" action="/api/stats" onsubmit="return validateMatchID()">
         <label for="ID">Faceit Match Page Link:</label>
         <input type="text" name="ID" id="ID">
         <button type="submit">Submit</button>
         <span id="error-message" style="color:red; margin-left:10px;"></span>
+    
+   <!----- Pmot Shit------>
     </form>
     <h1>Enter Player ID</h1>
     <form action="/api/player" method="post">
         <label for="playerid">Player ID:</label>
         <input type="text" name="playerid" id="playerid">
+    
     </form>
+    <!-------------------->
     <script>
         function validateMatchID() {
             const input = document.getElementById('ID').value.trim();
@@ -42,6 +81,3 @@
             return true;
         }
     </script>
-</body>
-
-</html>
