@@ -51,12 +51,34 @@
             font-weight: bold;
             letter-spacing: 2px;
         }
+        .team-logo {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            margin-bottom: 16px;
+            transition: transform 0.2s;
+            cursor: pointer;
+        }
+        .team-logo:hover {
+            transform: scale(1.12);
+        }
+        .team-link {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 2rem;
+            display: block;
+            margin-top: 8px;
+        }
+        .team-link:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <div class="banner">
-    <img src="/static/images/C0reLogo.png" alt="Core Esports Logo">
-    <nav style="flex: 1; display: flex; justify-content: center; gap: 32px; align-items: center;">
+        <img src="/static/images/C0reLogo.png" alt="Core Esports Logo">
+        <nav style="flex: 1; display: flex; justify-content: center; gap: 32px; align-items: center;">
             <a href="/">Home</a>
             <a href="/shop">Shop</a>
             <a href="/teams">Teams</a>
@@ -66,7 +88,24 @@
     </div>
     <h1 style="text-align:center; margin-top:40px;">Core Esports Teams</h1>
     <div class="teams-container">
-        <div class="team-card">Core Black</div>
-        <div class="team-card">Core White</div>
-        <div class="team-card">Core Red</div>
+        <div class="team-card">
+            <a href="/teams/core-black">
+                <img src="/static/images/C0reLogo.png" alt="Core Black Logo" class="team-logo">
+                <span class="team-link">Core Black</span>
+            </a>
+        </div>
+        <div class="team-card">
+            <a href="/teams/core-white">
+                <img src="/static/images/C0reWhite.png" alt="Core White Logo" class="team-logo">
+                <span class="team-link">Core White</span>
+            </a>
+        </div>
+        <div class="team-card">
+            <a href="/teams/core-red">
+                <img src="/static/images/C0reRed.png" alt="Core Red Logo" class="team-logo">
+                <span class="team-link">Core Red</span>
+            </a>
+        </div>
     </div>
+</body>
+</html>
