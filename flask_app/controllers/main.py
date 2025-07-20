@@ -38,3 +38,14 @@ def teams():
 def core():
     return render_template('core.html')
 
+@app.route('/teams/core-black')
+def core_black():
+    return render_template('C0reBlack.html')
+
+@app.route('/teams/core-white')
+def core_white():
+    return render_template('C0reWhite.html')
+
+@app.route('/teams/core-red')
+def core_red():
+    return render_template('C0reRed.html')

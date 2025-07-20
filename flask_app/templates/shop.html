@@ -55,6 +55,11 @@
             height: 120px;
             object-fit: contain;
             margin-bottom: 16px;
+            transition: transform 0.2s;
+        }
+        .shop-item img:hover {
+            transform: scale(4.15);
+            z-index: 2;
         }
         .shop-item button {
             background: #3a006a;
@@ -73,8 +78,8 @@
 </head>
 <body>
     <div class="banner">
-    <img src="/static/images/C0reLogo.png" alt="Core Esports Logo">
-    <nav style="flex: 1; display: flex; justify-content: center; gap: 32px; align-items: center;">
+        <img src="/static/images/C0reLogo.png" alt="Core Esports Logo">
+        <nav style="flex: 1; display: flex; justify-content: center; gap: 32px; align-items: center;">
             <a href="/">Home</a>
             <a href="/shop">Shop</a>
             <a href="/teams">Teams</a>
@@ -86,19 +91,19 @@
     <div class="shop-items">
         <!-- Example shop items, replace with your actual products -->
         <div class="shop-item">
-            <img src="/static/shop/shirt.png" alt="Core Esports Shirt">
+            <img src="/static/images/SteelShirt.png" alt="Core Esports Shirt">
             <h2>Core Esports Shirt</h2>
             <p>$35.00</p>
             <button>Add to Cart</button>
         </div>
         <div class="shop-item">
-            <img src="/static/shop/hoodie.png" alt="Core Esports Hoodie">
+            <img src="/static/images/CoreSweatshirt.png" alt="Core Esports Hoodie">
             <h2>Core Esports Hoodie</h2>
             <p>$65.00</p>
             <button>Add to Cart</button>
         </div>
         <div class="shop-item">
-            <img src="/static/shop/mug.png" alt="Core Esports Mug">
+            <img src="/static/images/JaggerMug.png" alt="Core Esports Mug">
             <h2>Core Esports Mug</h2>
             <p>$25.00</p>
             <button>Add to Cart</button>
